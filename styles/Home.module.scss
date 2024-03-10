@@ -1,0 +1,50 @@
+._hero {
+  min-height: 100vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_form {
+    width: 30%;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 10px rgba(202, 198, 198, 0.5);
+    min-height: 400px;
+    padding: 1em 0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &_inpHandler {
+      display: flex;
+      flex-direction: column;
+      margin: 0.2em 0;
+      label {
+        font-weight: 600;
+      }
+      input,
+      input[type="submit"] {
+        width: 300px;
+        border-radius: 8px;
+        border: 0.1em solid rgb(0, 0, 0);
+        padding: 0.6em 0;
+        padding-left: 0.5em;
+      }
+      input[type="submit"] {
+        background: #000;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  ._hero {
+    &_form {
+      width: 90%;
+    }
+  }
+}
